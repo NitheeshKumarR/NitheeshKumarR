@@ -169,9 +169,13 @@ An ML-powered web application for predicting house prices.
 
 <div align="center">
 
-<img height="180em" src="https://github-readme-stats.vercel.app/api?username=NitheeshkumarR&show_icons=true&theme=github_dark&hide_border=true&include_all_commits=true&count_private=true" />
+<img height="180em"
+     src="https://github-readme-stats-fast.vercel.app/api?username=NitheeshkumarR&show_icons=true&theme=github_dark&hide_border=true&include_all_commits=true&count_private=true"
+     alt="Nitheesh's GitHub Stats" />
 
-<img height="180em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=NitheeshkumarR&layout=compact&theme=github_dark&hide_border=true" />
+<img height="180em"
+     src="https://github-readme-stats-fast.vercel.app/api/top-langs?username=NitheeshkumarR&layout=compact&theme=github_dark&hide_border=true"
+     alt="Nitheesh's Top Languages" />
 
 </div>
 
@@ -179,7 +183,8 @@ An ML-powered web application for predicting house prices.
 
 <div align="center">
 
-<img src="https://streak-stats.demolab.com?user=NitheeshkumarR&theme=github-dark-blue&hide_border=true" />
+<img src="https://streak-stats.demolab.com?user=NitheeshkumarR&theme=github-dark-blue&hide_border=true"
+     alt="Nitheesh's GitHub Streak" />
 
 </div>
 

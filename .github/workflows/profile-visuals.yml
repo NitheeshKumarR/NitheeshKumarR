@@ -1,0 +1,53 @@
+name: Generate Profile Visuals
+
+on:
+  # Run automatically every 12 hours
+  schedule:
+    - cron: "0 */12 * * *"
+
+  # Allow manual execution from the Actions tab
+  workflow_dispatch:
+
+  # Run whenever main is updated
+  push:
+    branches:
+      - main
+
+jobs:
+  generate:
+    runs-on: ubuntu-latest
+
+    permissions:
+      contents: write
+
+    steps:
+      # Required by the activity graph generator
+      - name: Checkout Repository
+        uses: actions/checkout@v6
+
+      # Generate GitHub activity graph
+      - name: Generate Activity Graph
+        uses: maurodesouza/github-readme-activity-graph-action@v1
+        with:
+          username: ${{ github.repository_owner }}
+          options: theme=github-compact&hide_border=true&area=true
+          output_path: dist/activity-graph.svg
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      # Generate light and dark contribution snakes
+      - name: Generate Contribution Snake
+        uses: Platane/snk/svg-only@v3
+        with:
+          github_user_name: ${{ github.repository_owner }}
+          outputs: |
+            dist/github-contribution-grid-snake.svg
+            dist/github-contribution-grid-snake-dark.svg?palette=github-dark
+
+      # Publish everything in dist/ to the output branch
+      - name: Publish Profile Visuals
+        uses: crazy-max/ghaction-github-pages@v3.1.0
+        with:
+          target_branch: output
+          build_dir: dist
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

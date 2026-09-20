@@ -194,7 +194,11 @@ An ML-powered web application for predicting house prices.
 
 <div align="center">
 
-<img src="https://github-readme-activity-graph.vercel.app/graph?username=NitheeshkumarR&theme=github-compact&hide_border=true&area=true" width="100%" />
+<img
+  src="https://raw.githubusercontent.com/NitheeshkumarR/NitheeshkumarR/output/activity-graph.svg"
+  width="100%"
+  alt="Nitheesh's GitHub Activity Graph"
+/>
 
 </div>
 
@@ -204,9 +208,24 @@ An ML-powered web application for predicting house prices.
 
 <div align="center">
 
-<img src="https://raw.githubusercontent.com/NitheeshkumarR/NitheeshkumarR/output/github-contribution-grid-snake-dark.svg" alt="Contribution Snake" />
+<picture>
+  <source
+    media="(prefers-color-scheme: dark)"
+    srcset="https://raw.githubusercontent.com/NitheeshkumarR/NitheeshkumarR/output/github-contribution-grid-snake-dark.svg"
+  />
+  <source
+    media="(prefers-color-scheme: light)"
+    srcset="https://raw.githubusercontent.com/NitheeshkumarR/NitheeshkumarR/output/github-contribution-grid-snake.svg"
+  />
+  <img
+    alt="Nitheesh Kumar GitHub Contribution Snake"
+    src="https://raw.githubusercontent.com/NitheeshkumarR/NitheeshkumarR/output/github-contribution-grid-snake.svg"
+  />
+</picture>
 
 </div>
+
+---
 
 ---
 

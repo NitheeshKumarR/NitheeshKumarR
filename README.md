@@ -195,13 +195,14 @@ An ML-powered web application for predicting house prices.
 <div align="center">
 
 <img
-  src="https://raw.githubusercontent.com/NitheeshkumarR/NitheeshkumarR/output/activity-graph.svg"
+  src="https://ghchart.rshah.org/39d353/NitheeshkumarR"
+  alt="Nitheesh Kumar's GitHub Contribution Chart"
   width="100%"
-  alt="Nitheesh's GitHub Activity Graph"
 />
 
 </div>
 
+---
 ---
 
 ## 🐍 Contribution Snake
